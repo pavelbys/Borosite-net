@@ -40,6 +40,11 @@ Once the code has been cloned run the following command to install the required 
  
     npm install
 
+To add a Heroku app named borosite-net as a Git remote, execute 
+
+    heroku git:remote -a borosite-net
+
+
 ## File structure
 ---
 
