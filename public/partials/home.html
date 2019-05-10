@@ -1,0 +1,65 @@
+
+<canvas id="HexCanvas" width="1200" height="200"></canvas>
+
+  <!--  <link rel="shortcut icon" type="image/png" href="images/favicon.png"> -->
+
+<div class="centered">
+    <img src="images/home-logo.png" class="logo"/>
+
+    <img src="images/hbximg.png" class="logo" height="300">
+
+    <p class="paragraph">
+        <strong>American Boronite Corporation</strong> is an advanced materials company manufacturing nanotubes in continuous <strong>yarn</strong> and <strong>seamless tape</strong> formats. We are focused not only on being the first in the world to synthesize Boron Nitride Nanotubes (BNNTs) in continuous form, but also on building industrial-scale manufacturing capabilities for these materials. We have developed a proprietary, patent pending, scalable technology, with appropriate quality control and manufacturing systems. We are also developing <strong>Superwire</strong>, a patent-pending revolutionary new electrical conductor based on carbon nanotubes (CNTs). Our immediate goal is the development of both BNNT yarn and tape and of Superwire conductors for <!-- academic study, --> application development and commercial sales. Our focus is to become the globally preeminent supplier of BNNT yarn and tape as well as Superwire conductors, and developer and licensor of BNNT and CNT applications in a wide variety of fields.
+    </p>
+</div>
+<div class="homeImagePopup fadeInFast" ng-if="selectedImage" >
+    <img class="homeImagePopupContent" ng-attr-src="{{selectedImage}}"/>
+</div>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe.
+    It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides.
+        PhotoSwipe keeps only 3 of them in the DOM to save memory.
+        Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader-active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
